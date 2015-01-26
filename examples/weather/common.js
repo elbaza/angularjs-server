@@ -39,6 +39,10 @@ app.controller(
         if (weatherData.weather) {
             $scope.weather = weatherData.weather[0];
         }
+        
+        $scope.doChange = function(){
+            $scope.city.name = "test";
+        };
     }
 );
 
